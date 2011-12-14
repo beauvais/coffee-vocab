@@ -4,7 +4,8 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix cv: <http://www.zachbeauvais.com/coffee-vocabulary> .
+@prefix wo: <http://purl.org/ontology/wo/> .
+@prefix cv: <http://www.zachbeauvais.com/coffee-vocabulary/> .
 
 cv:coffee rdf:type skos:Concept;
 	skos:prefLabel "coffee"@en;
@@ -17,14 +18,17 @@ cv:coffea rdf:type skos:Concept;
 	skos:related cv:coffee;
 	skos:broader cv:coffea-arabica;
 	skos:broader cv:coffea-robusta;
+	a wo:genus;
 	skos:definition "coffea is a botanical genus comprising species with common names of coffee".
 	
 cv:coffea-arabica rdf:type skos:Concept;
 	skos:prefLabel "coffea arabica"@en;
 	skos:narrower cv:coffea;
+	wo:genus cv:coffea;
 	skos:definition "coffea arabica is a botanical species of the genus coffea."
 	
 cv:coffea-robusta rdf:type skos:Concept;
 		skos:prefLabel "coffea arabica"@en;
 		skos:narrower cv:coffea;
+		wo:genus cv:coffea;
 		skos:definition "coffea arabica is a botanical species of the genus coffea."
