@@ -15,6 +15,16 @@ cv:coffee rdf:type skos:Concept;
 cv:coffea rdf:type skos:Concept;
 	skos:prefLabel "coffea"@en;
 	skos:related cv:coffee;
+	skos:broader cv:coffea-arabica;
+	skos:broader cv:coffea-robusta;
 	skos:definition "coffea is a botanical genus comprising species with common names of coffee".
 	
-cv:coffea-arabica rdf:type skos:
+cv:coffea-arabica rdf:type skos:Concept;
+	skos:prefLabel "coffea arabica"@en;
+	skos:narrower cv:coffea;
+	skos:definition "coffea arabica is a botanical species of the genus coffea."
+	
+cv:coffea-robusta rdf:type skos:Concept;
+		skos:prefLabel "coffea arabica"@en;
+		skos:narrower cv:coffea;
+		skos:definition "coffea arabica is a botanical species of the genus coffea."
