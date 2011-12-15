@@ -11,6 +11,7 @@ cv:coffee rdf:type skos:Concept;
 	skos:prefLabel "coffee"@en;
 	skos:altLabel "joe"@en;
 	skos:altLabel "java"@en;
+	rdfs:seeAlso <http://dbpedia.org/resource/Coffee>;
 	skos:definition "Coffee is a concept comprising many terms relating to two species of the coffea genus and products made from them. In particular, it covers a class of beverages prepared from the seeds of coffea species."@en.
 	
 cv:coffea rdf:type skos:Concept;
@@ -23,8 +24,10 @@ cv:coffea rdf:type skos:Concept;
 	
 cv:coffea-arabica rdf:type skos:Concept;
 	skos:prefLabel "coffea arabica"@la;
+	skos:altLabel "arabica coffee"@en;
 	skos:narrower cv:coffea;
 	wo:genus cv:coffea;
+	rdfs:seeAlso <http://bio2rdf.org/taxonomy:13443>;
 	skos:definition "coffea arabica is a botanical species of the genus coffea."
 	
 cv:coffea-robusta rdf:type skos:Concept;
